@@ -64,9 +64,6 @@ height: auto;
 .nm{
 font-size:27px;
 }
-.tt{
-width:100%;
-}
 
 }
 /* Normal Usage */
@@ -270,7 +267,17 @@ background-color: black;
 position:fixed;
 z-index: 1000;
 }
+::-webkit-scrollbar{
+  width: 10px;
 
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.352);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background-color: goldenrod;
+}
 
     </style>
 </head>
@@ -290,7 +297,8 @@ z-index: 1000;
     <div style="position: absolut; ">
         
   <section>
-    <nav id="navbar" class="navbar navbar-expand-lg border-bottom-2 fixed-top" style="background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px); border-bottom:1px solid goldenrod;">
+    
+    <nav id="navbar" class="container rounded-bottom-5 navbar navbar-expand-lg border-bottom-2 fixed-top" style="background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px); border-bottom:1px solid goldenrod;">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="index.html"> <img src="Images/SA.png" alt="Shahzeb Ali" width="30" height="24">Shahzeb Ali </a>
           <button class="navbar-toggler navbar-dark"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -323,7 +331,7 @@ z-index: 1000;
     </nav>
   </section><br>
   
-  <section id="hero-section" class="mt-lg-5" style=" width: 100%; display: flex; justify-content: center; ">
+  <section id="hero-section" class="mt-5" style=" width: 100%; display: flex; justify-content: center; ">
     <div class="col-xxl-8 px-4 py-5 container rounded-5 pb-0 pt-0 mt-lg-5" style="box-shadow: 4px 4px 10px white; background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px);" >
       <div class="hero row flex-lg-row-reverse align-items-center g-5 py-5 h-100" >
         <div class="col-10 col-sm-8 col-lg-6" >
@@ -479,7 +487,7 @@ z-index: 1000;
   </section>
   <br><br>
   <section id="testimonials" style=" width: 100%; display: flex; justify-content: center; ">
-    <div class="tt contaier mt-5 pt-5 text-light rounded-5" style="width: 90%;  box-shadow: 4px 4px 10px white; background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px);">
+    <div class="container mt-5 pt-5 text-light rounded-5" style="  box-shadow: 4px 4px 10px white; background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px);">
         <h1 class="text-center">Testimonials</h1>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -494,7 +502,7 @@ z-index: 1000;
                   <div class="row justify-content-center">
                     <div class="col-lg-10">
                       <div class="row align-items-center">
-                        <div class="col-md-4 mb-4 mb-md-0"><img alt="" width="600" height="600"  class="img-fluid rounded-circle" src="Images/t1.jpg"></div>
+                        <div class="col-md-4 mb-4 mb-md-0 text-center"><img alt="" width="60%" height="auto"  class="img-fluid rounded-circle" src="Images/t1.jpg"></div>
                         <div class="col-md-8 ps-md-5">
                           <div class="text-primary mb-4">
                             <svg class="bi bi-quote" fill="goldenrod" height="48" viewbox="0 0 16 16" width="48" xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +528,7 @@ z-index: 1000;
                   <div class="row justify-content-center">
                     <div class="col-lg-10">
                       <div class="row align-items-center">
-                        <div class="col-md-4 mb-4 mb-md-0"><img alt="" width="600" height="600" class="img-fluid rounded-circle" src="Images/t2.jpg"></div>
+                        <div class="col-md-4 mb-4 mb-md-0 text-center"><img alt="" width="60%" height="auto" class="img-fluid rounded-circle" src="Images/t2.jpg"></div>
                         <div class="col-md-8 ps-md-5">
                           <div class="text-primary mb-4">
                             <svg class="bi bi-quote" fill="goldenrod" height="48" viewbox="0 0 16 16" width="48" xmlns="http://www.w3.org/2000/svg">
@@ -546,7 +554,7 @@ z-index: 1000;
                   <div class="row justify-content-center">
                     <div class="col-lg-10">
                       <div class="row align-items-center">
-                        <div class="col-md-4 mb-4 mb-md-0"><img alt="" width="600" height="600" class="img-fluid rounded-circle" src="Images/t3.jpg"></div>
+                        <div class="col-md-4 mb-4 mb-md-0 text-center"><img alt="" width="60%" height="auto" class="img-fluid rounded-circle" src="Images/t3.jpg"></div>
                         <div class="col-md-8 ps-md-5">
                           <div class="text-primary mb-4">
                             <svg class="bi bi-quote" fill="goldenrod" height="48" viewbox="0 0 16 16" width="48" xmlns="http://www.w3.org/2000/svg">
@@ -770,7 +778,7 @@ z-index: 1000;
 </div>
 <br><br>
     <section id="footer">
-        <div class="container mt-5 pt-5 rounded-top-5 text-white" style="box-shadow: 4px 4px 10px white; background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px);">
+        <div class="container mb-0 mt-5 pt-5 rounded-top-5 text-white" style="box-shadow: 4px 4px 10px white; background-color: rgba(0, 0, 0, 0.355); backdrop-filter: blur(5px);">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="index.html" class="mb-3 me-2 mb-md-0  text-decoration-none lh-1">
